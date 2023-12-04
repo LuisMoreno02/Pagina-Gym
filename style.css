@@ -1,0 +1,563 @@
+/* Reseteo de estilos para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* Estilos para el cuerpo */
+body {
+    background-color: black;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilos para el menú */
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F61706;
+}
+
+/* Estilos para la barra de navegación */
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #f61706;
+}
+
+/* Estilos para el icono de menú en pantallas pequeñas */
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para el texto en el encabezado */
+.header-text {
+    text-align: center;
+    width: 100%;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.header-text p {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Estilos para el botón en el encabezado */
+.btn-1 {
+    display: inline-block;
+    background-color: #F61706;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.btn-1:hover {
+    background-color: #cd1103;
+}
+
+/* Estilos para la sección de servicios */
+.services {
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+/* Estilos para el grupo de servicios */
+.group-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada servicio */
+.service {
+    padding: 15px;
+    flex-basis: calc(33.33% - 20px);
+}
+
+.service img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+/* Estilos para la sección de portafolio */
+.porfolio {
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.porfolio-txt {
+    margin-bottom: 20px;
+}
+
+.porfolio-txt h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.porfolio-txt p {
+    font-size: 18px;
+}
+
+/* Estilos para las imágenes del portafolio */
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img {
+    width: 200px;
+    margin: 0 10px;
+}
+
+/* Estilos para la sección de fondo secundario */
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/bg-sec.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 30px 0;
+}
+
+/* Estilos para el texto en el fondo secundario */
+.bg-txt {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la sección de precios */
+.prices {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    color: #ffffff;
+}
+
+.price {
+    text-align: center;
+}
+
+.price h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.price ul li {
+    font-size: 18px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    padding: 50px 0;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para los enlaces en el pie de página */
+.enlace h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los botones en el pie de página */
+.btn-2 {
+    padding: 10px 25px;
+    border: 0;
+}
+
+.btn-3 {
+    background-color: #F61706;
+    padding: 10px 25px;
+    border: 0;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* Estilos responsivos para pantallas medianas (max-width: 991px) */
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #F61706;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    header {
+        height: 40vh;
+    }
+    .header-text {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    .services {
+        padding: 20px;
+    }
+    .txt-1 {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .group-services {
+        flex-direction: column;
+    }
+    .service {
+        margin-bottom: 15px;
+    }
+    .porfolio {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .porfolio-txt p {
+        margin: 0;
+    }
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs img {
+        margin: 15px 0 0 0;
+    }
+    .bg-txt {
+        padding: 20px;
+    }
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .price {
+        margin-bottom: 15px;
+    }
+    footer {
+        padding: 30px;
+    }
+    .ft {
+        text-align: center;
+        flex-direction: column;
+    }
+    .enlace form {
+        align-items: center;
+    }
+}
+
+/* Estilos responsivos para pantallas pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu .logo {
+        font-size: 20px;
+    }
+    .menu .navbar ul li a {
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .header-text p {
+        font-size: 16px;
+    }
+    .btn-1 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .services h2 {
+        font-size: 30px;
+    }
+    .txt-1 {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    .service h3 {
+        font-size: 18px;
+    }
+    .service p {
+        font-size: 14px;
+    }
+    .porfolio-txt h2 {
+        font-size: 30px;
+    }
+    .porfolio-txt p {
+        font-size: 16px;
+    }
+    .bg-txt h2 {
+        font-size: 30px;
+    }
+    .bg-txt p {
+        font-size: 16px;
+    }
+    .prices h3 {
+        font-size: 30px;
+    }
+    .price ul li {
+        font-size: 16px;
+    }
+    .enlace h3 {
+        font-size: 18px;
+    }
+    .enlace a {
+        font-size: 14px;
+    }
+    .btn-2, .btn-3 {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Estilos para el botón de flecha arriba */
+.flecha-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.flecha-arriba img {
+    width: 30px; /* Ajusta el tamaño de la flecha según tus necesidades */
+    height: auto;
+}
+
+/* Estilos para el botón de WhatsApp */
+.boton-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; /* Ajusta la posición horizontal según tus necesidades */
+    background-color: #ffffff; /* Color de WhatsApp */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.boton-whatsapp img {
+    width: 30px; /* Ajusta el tamaño del logo de WhatsApp según tus necesidades */
+    height: auto;
+}
+
+/* Estilos para las imágenes de la sección de imágenes con transición */
+.imgs {
+    display: flex;
+    width: 600px;
+    height: 300px;
+}
+
+.imgs img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.imgs img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la ventana emergente */
+.ventana-emergente:target {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.ventana-emergente {
+    display: none;
+}
+
+/* Estilos para cerrar la ventana emergente */
+.cerrar a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Estilos generales para el botón enlaces */
+button a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Estilos para el formulario en el pie de página */
+.enlace form {
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: black; /* Color del texto del formulario */
+}
+
+/* Estilos para los campos de entrada en el formulario */
+.enlace form input[type="text"],
+.enlace form input[type="radio"],
+.enlace form input[type="submit"] {
+    background-color: transparent; /* Fondo transparente */
+    color: black; /* Texto negro */
+    border: 1px solid black; /* Borde negro */
+    padding: 10px; /* Espaciado interno del campo */
+    margin-bottom: 15px; /* Espaciado inferior entre campos */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
